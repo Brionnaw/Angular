@@ -4,7 +4,11 @@ var MovieApp;
     (function (Controllers) {
         var MovieController = (function () {
             function MovieController() {
-                this.movie = "Harry Potter";
+                this.movies = [
+                    { title: "fast n furious" },
+                    { title: "die hard" },
+                    { title: "snow white" }
+                ];
             }
             return MovieController;
         }());
