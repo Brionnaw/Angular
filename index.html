@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <title>Angular</title>
   </head>
-  <body>
-    <h1>Angular Lesson</h1>
-    client / server side (front end and backend)
-    mvc - model view controller
-    (SPA) single page application  vs web application  : serve out a single and insert templates onto it
-    ( faster and not waiting for pages to load)
-    in demand framework for tech jobs
-    build small or enterprise apps.
-    ng = angular
+  <body ng-controller="MovieController as vm">
+    <input ng-model="vm.color"/>
+    <button type="button" ng-click="vm.pickColor()">Pick color</button>
+    <!-- <input ng-model="food" placeholder="enter food.."/>
+    <p>{{food}}</p> -->
+    <!-- app scripts -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src ="controllers.js"> </script>
   </body>
 </html>
