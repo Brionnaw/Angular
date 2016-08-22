@@ -5,9 +5,7 @@ var MovieApp;
         var MovieController = (function () {
             function MovieController() {
                 this.movies = [
-                    { title: "fast n furious" },
-                    { title: "die hard" },
-                    { title: "snow white" }
+                    { title: new Date() }
                 ];
             }
             return MovieController;
