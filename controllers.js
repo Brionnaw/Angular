@@ -4,10 +4,8 @@ var MovieApp;
     (function (Controllers) {
         var MovieController = (function () {
             function MovieController() {
+                this.movie = "Harry Potter";
             }
-            MovieController.prototype.pickColor = function () {
-                console.log(this.color);
-            };
             return MovieController;
         }());
         Controllers.MovieController = MovieController;
